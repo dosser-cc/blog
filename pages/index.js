@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Header from '../components/Header'
+import Format from '../layout/Format'
+
+
+// components
+import Section1 from '../components/Section1';
 
 export default function Home() {
   return (
-    <Header></Header>
-  
-  )
+    <Format>
+      <Section1></Section1>
+    </Format>
+  );
 }
