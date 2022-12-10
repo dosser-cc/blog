@@ -10,7 +10,7 @@ export default function Swiperlist() {
 
   SwiperCore.use([Autoplay])
   return (
-    <section className="py-4 p-2">
+    <section className="py-4 p-1">
       <div className="container mx-auto md:px-2">
       
         <Swiper

@@ -21,7 +21,7 @@ export default function Mainlist(){
 
 function Post(){
   return (
-    <div className="item p-2">
+    <div className="item p-1">
       <div className="images">
         <Link href={"/"}>
           <Image

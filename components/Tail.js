@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Tail (){
   return (
-    <section className="container mx-auto md:px-20 py-6">
+    <section className="container mx-auto md:px-20 py-6 p-1">
       <div className="grid lg:grid-cols-2">
         <div className="item">
           <h1 className="font-bold text-4xl py-8 text-center">Business</h1>
