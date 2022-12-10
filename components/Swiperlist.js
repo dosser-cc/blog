@@ -1,26 +1,49 @@
 import Image from "next/image"
 import Link from "next/link"
 import Author from "./_child/author";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, {Autoplay} from 'swiper';
+// Import Swiper styles
+import 'swiper/css';
 
-export default function Section1() {
+export default function Swiperlist() {
+
+  SwiperCore.use([Autoplay])
   return (
     <section className="py-16 p-2">
       <div className="container mx-auto md:px-2">
-        <h1 className="font-bold text-4xl pb-12 text-center hidden md:flex mt-4 md:mt-0">Dosser</h1>
-
-        {Slide()}
-
+        <h1 className="font-bold text-4xl pb-12 text-center hidden md:flex mt-4 md:mt-0">
+          Dosser
+        </h1>
+        <Swiper
+        
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay:2000
+          }}
+          
+        >
+          <SwiperSlide>{Slide()}</SwiperSlide>
+          <SwiperSlide>{Slide()}</SwiperSlide>
+          <SwiperSlide>{Slide()}</SwiperSlide>
+          <SwiperSlide>{Slide()}</SwiperSlide>
+          <SwiperSlide>{Slide()}</SwiperSlide>
+          <SwiperSlide>{Slide()}</SwiperSlide>
+        </Swiper>
       </div>
     </section>
-  )
+  );
 }
 
 function Slide() {
+
+
   return (
     <div className="grid md:grid-cols-2">
       <div className="image">
         <Link href={"/"}>
-          <Image src={"/images/forest.jpg"} width={680} height={600} />
+          <Image src={"/images/forest.jpg"} width={680} height={380} />
         </Link>
       </div>
       <div className="info flex justify-center flex-col">

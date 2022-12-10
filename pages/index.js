@@ -4,12 +4,16 @@ import Format from '../layout/Format'
 
 
 // components
-import Section1 from '../components/Section1';
+import Swiperlist from "../components/Swiperlist";
+import Mainlist from '../components/Mainlist';
+
 
 export default function Home() {
   return (
     <Format>
-      <Section1></Section1>
+      <Swiperlist></Swiperlist>
+      <Mainlist></Mainlist>
+      
     </Format>
   );
 }
