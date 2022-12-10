@@ -7,6 +7,7 @@ import Format from '../layout/Format'
 import Swiperlist from "../components/Swiperlist";
 import Mainlist from '../components/Mainlist';
 import Popular from "../components/Popular";
+import Tail from '../components/Tail';
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Swiperlist></Swiperlist>
       <Mainlist></Mainlist>
       <Popular></Popular>
+      <Tail></Tail>
       
     </Format>
   );

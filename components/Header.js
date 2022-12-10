@@ -24,15 +24,7 @@ export default function Header() {
 
         <div className="w-96 order-3 flex justify-center">
           <div className="flex gap-8 mt-6 md:mt-0">
-            <Link href={"#"}>
-              <ImFacebook className="h-6 w-6 text-green-600" />
-            </Link>
-            <Link href={"#"}>
-              <ImTwitter className="h-6 w-6 text-blue-600" />
-            </Link>
-            <Link href={"#"}>
-              <ImTelegram className="h-6 w-6 text-red-600" />
-            </Link>
+            
           </div>
         </div>
       </div>

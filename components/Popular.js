@@ -33,7 +33,7 @@ function Post() {
       <div className="images">
         <Link href={"/"}>
           <Image
-            src={"/images/forest.jpg"}
+            src={"/images/flowr.jpg"}
             width={680}
             height={400}
           />

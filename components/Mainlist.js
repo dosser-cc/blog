@@ -25,7 +25,7 @@ function Post(){
       <div className="images">
         <Link href={"/"}>
           <Image
-            src={"/images/forest.jpg"}
+            src={"/images/flowr.jpg"}
             className="rounded"
             width={480}
             height={480}
@@ -55,7 +55,7 @@ function Post(){
             How to Make Blog Website with Next.js
           </Link>
         </div>
-        <p className="text-sm text-gray-500 overflow-hidden py-3">
+        <p className="text-sm text-gray-500 overflow-hidden py-3 hidden md:flex">
           How to Make Blog Website with Next.js & Tailwind CSS - For Beginners
           In this course
         </p>

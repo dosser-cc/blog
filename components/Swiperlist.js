@@ -18,7 +18,7 @@ export default function Swiperlist() {
           slidesPerView={1}
           loop={true}
           autoplay={{
-            delay:3000
+            delay:4000
           }}
           
         >
@@ -36,12 +36,17 @@ export default function Swiperlist() {
 
 function Slide() {
 
+  const bg = {
+    background: "url('/images/yf.png') no-repeat",
+    backgroundPosition: "right",
+
+  };
 
   return (
-    <div className="grid md:grid-cols-2">
-      <div className="image">
+    <div className="grid md:grid-cols-2 gap-4" style={bg}>
+      <div className="image hidden xl:flex">
         <Link href={"/"}>
-          <Image src={"/images/forest.jpg"} width={680} height={350} />
+          <Image src={"/images/dosser.jpg"} width={680} height={440} />
         </Link>
       </div>
       <div className="info flex justify-center flex-col">
@@ -71,7 +76,7 @@ function Slide() {
           How to Make Blog Website with Next.js & Tailwind CSS - For Beginners
           In this course, we will understand how to make a blog website using
           Next.js and Tailwindcss. In this course, you are going to learn how to
-          use next.js 
+          use next.js
         </p>
         <Author></Author>
       </div>
