@@ -43,7 +43,7 @@ function Slide() {
     <div className="grid md:grid-cols-2">
       <div className="image">
         <Link href={"/"}>
-          <Image src={"/images/forest.jpg"} width={680} height={380} />
+          <Image src={"/images/forest.jpg"} width={680} height={350} />
         </Link>
       </div>
       <div className="info flex justify-center flex-col">
@@ -73,10 +73,7 @@ function Slide() {
           How to Make Blog Website with Next.js & Tailwind CSS - For Beginners
           In this course, we will understand how to make a blog website using
           Next.js and Tailwindcss. In this course, you are going to learn how to
-          use next.js for real work examples. In the next.js course, we learn
-          the basics. Now let's dive in and see how we can use that learning to
-          make a project in next.js. If you want to learn next.js from the
-          beginning here is the link:
+          use next.js 
         </p>
         <Author></Author>
       </div>
