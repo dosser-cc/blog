@@ -1,34 +1,41 @@
+import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import Image from "next/image";
 import Author from "./_child/author";
+import SwiperCore, { Autoplay } from "swiper";
 
-
-export default function Mainlist(){
+export default function Popular() {
   return (
     <section className="container mx-auto md:px-20">
-      <h1 className="font-bold text-4xl px-12 text-center py-6">Latext Post</h1>
+      <h1 className="font-bold text-4xl py-4 text-center">Most Popular</h1>
 
-      {/** grid columns */}
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {Post()}
-        {Post()}
-        {Post()}
-        {Post()}
-      </div>
+      {/** swiper */}
+      <Swiper
+        slidesPerView={2}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+        }}
+      >
+        <SwiperSlide>{Post()}</SwiperSlide>
+        <SwiperSlide>{Post()}</SwiperSlide>
+        <SwiperSlide>{Post()}</SwiperSlide>
+        <SwiperSlide>{Post()}</SwiperSlide>
+        <SwiperSlide>{Post()}</SwiperSlide>
+      </Swiper>
     </section>
   );
 }
 
-function Post(){
+function Post() {
   return (
-    <div className="item p-2">
+    <div className="grid p-2">
       <div className="images">
         <Link href={"/"}>
           <Image
             src={"/images/forest.jpg"}
-            className="rounded"
-            width={480}
-            height={480}
+            width={680}
+            height={400}
           />
         </Link>
       </div>

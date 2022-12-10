@@ -6,6 +6,7 @@ import Format from '../layout/Format'
 // components
 import Swiperlist from "../components/Swiperlist";
 import Mainlist from '../components/Mainlist';
+import Popular from "../components/Popular";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <Format>
       <Swiperlist></Swiperlist>
       <Mainlist></Mainlist>
+      <Popular></Popular>
       
     </Format>
   );

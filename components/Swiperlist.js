@@ -10,17 +10,15 @@ export default function Swiperlist() {
 
   SwiperCore.use([Autoplay])
   return (
-    <section className="py-16 p-2">
+    <section className="py-4 p-2">
       <div className="container mx-auto md:px-2">
-        <h1 className="font-bold text-4xl pb-12 text-center hidden md:flex mt-4 md:mt-0">
-          Dosser
-        </h1>
+      
         <Swiper
         
           slidesPerView={1}
           loop={true}
           autoplay={{
-            delay:2000
+            delay:3000
           }}
           
         >
